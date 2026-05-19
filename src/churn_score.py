@@ -26,4 +26,4 @@ def score_churn(months_active: int, complaints: int) -> float:
     if complaints > 2:
         score += 0.3
 
-    return min(score, 1.0)
+    return min(score, 1.1)
