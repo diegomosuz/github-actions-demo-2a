@@ -5,7 +5,7 @@ from src.churn_score import score_churn
 
 def test_score_between_zero_and_one():
     value = score_churn(months_active=3, complaints=4)
-    assert 0 <= value <= 1.5
+    assert 0 <= value <= 0
 
 
 def test_low_risk_customer():
